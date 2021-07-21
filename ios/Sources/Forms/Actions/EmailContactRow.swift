@@ -38,7 +38,7 @@ open class EmailContactCell: EmailCell, CNContactPickerDelegate {
     open override func setup() {
         super.setup()
 
-        let pickButton = UIButton(primaryAction: UIAction(title: "", image: UIImage(systemName: "phone.circle"), identifier: nil, discoverabilityTitle: "phone pick", attributes: [], state: .on, handler: { action in
+        let pickButton = UIButton(primaryAction: UIAction(title: "", image: UIImage(systemName: "envelope.circle"), identifier: nil, discoverabilityTitle: "email pick", attributes: [], state: .on, handler: { action in
             self.pickContactProperty(CNContactEmailAddressesKey)
         }))
 
