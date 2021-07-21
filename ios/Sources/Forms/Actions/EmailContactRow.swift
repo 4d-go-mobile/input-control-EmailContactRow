@@ -58,9 +58,9 @@ open class EmailContactCell: EmailCell, CNContactPickerDelegate {
     }
 
     public func contactPicker(_ picker: CNContactPickerViewController, didSelect contactProperty: CNContactProperty) {
-        if let phone = (contactProperty.value as? CNPhoneNumber)?.stringValue {
-            self.row.value = phone
-            self.textField.text = phone
+        if let email = contactProperty.value as? String {
+            self.row.value = email
+            self.textField.text = email
         }
     }
 
