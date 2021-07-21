@@ -1,0 +1,13 @@
+{
+    "name": "emailContact",
+    "type": "text",
+    "inject": true,
+    "capabilities": {
+          "contacts": true,
+          "settings": {
+              "application.services": [
+                  "EmailContactRowService"
+              ]
+          }
+      }
+  }
