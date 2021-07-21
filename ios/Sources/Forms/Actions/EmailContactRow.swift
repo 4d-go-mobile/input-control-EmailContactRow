@@ -1,5 +1,5 @@
 //
-//  EMailContactRow.swift
+//  EmailContactRow.swift
 //  ___PACKAGENAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___
@@ -16,7 +16,7 @@ import QMobileUI
 fileprivate let kEmailContact = "emilContact"
 
 // Create an Eureka row for the format
-final class EMailContactRow: FieldRow<EMailContactCell>, RowType {
+final class EmailContactRow: FieldRow<EmailContactCell>, RowType {
 
     required public init(tag: String?) {
         super.init(tag: tag)
@@ -25,7 +25,7 @@ final class EMailContactRow: FieldRow<EMailContactCell>, RowType {
 }
 
 // Create the associated row cell to display a button to pick contact
-open class EMailContactCell: EMailCell, CNContactPickerDelegate {
+open class EmailContactCell: EmailCell, CNContactPickerDelegate {
 
     required public init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -69,13 +69,13 @@ open class EMailContactCell: EMailCell, CNContactPickerDelegate {
     }
 }
 
-@objc(EMailContactRowService)
-class EMailContactRowService: NSObject, ApplicationService, ActionParameterCustomFormatRowBuilder {
-    @objc static var instance: EMailContactRowService = EMailContactRowService()
+@objc(EmailContactRowService)
+class EmailContactRowService: NSObject, ApplicationService, ActionParameterCustomFormatRowBuilder {
+    @objc static var instance: EmailContactRowService = EmailContactRowService()
     override init() {}
     func buildActionParameterCustomFormatRow(key: String, format: String, onRowEvent eventCallback: @escaping OnRowEventCallback) -> ActionParameterCustomFormatRowType? {
         if format == kEmailContact {
-            return EMailContactRow(key).onRowEvent(eventCallback)
+            return EmailContactRow(key).onRowEvent(eventCallback)
         }
         return nil
     }
