@@ -13,7 +13,7 @@ import Eureka
 import QMobileUI
 
 // name of the format
-fileprivate let kEmailContact = "emilContact"
+fileprivate let kEmailContact = "emailContact"
 
 // Create an Eureka row for the format
 final class EmailContactRow: FieldRow<EmailContactCell>, RowType {
