@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>mail</title>
+    <g id="Icônes-du-menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-444.000000, -950.000000)">
+            <g id="generate-copy" transform="translate(394.000000, 950.000000)">
+                <g id="mail" transform="translate(50.000000, 0.000000)">
+                    <path d="M12.264,16.135 L13.4395571,17.0702638 C14.0632934,17.5570942 14.9367066,17.5570942 15.5604429,17.0702638 L16.0404665,16.7005882 C16.3874451,19.6842046 18.9232811,22 22,22 L7,22 C6.57279409,22 6.17687227,21.8660569 5.85193916,21.6378754 L12.264,16.135 Z M5.08378875,10.4253348 L11.574,15.587 L5.26702507,20.9990671 C5.09718852,20.7051047 5,20.3639021 5,20 L5,11 C5,10.8002528 5.02928243,10.6073449 5.08378875,10.4253348 Z M22,9 C22.3213293,9 22.6249596,9.07577858 22.893995,9.21043988 L21.87,10.002 L21.7750617,10.0041385 C19.1266311,10.1017498 16.916663,11.9159213 16.2249398,14.3668707 L14.5,15.7020533 L6.26309073,9.14013427 C6.49113502,9.0497031 6.73976312,9 7,9 L22,9 Z" id="Combined-Shape" fill="#03A9F4"></path>
+                    <g id="Loupe" transform="translate(18.000000, 12.000000)" stroke="#03A9F4" stroke-width="2">
+                        <circle id="Oval-2" cx="4" cy="4" r="4"></circle>
+                        <line x1="7" y1="7" x2="11" y2="11" id="Line-3" stroke-linecap="round"></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
