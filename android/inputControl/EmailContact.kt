@@ -4,15 +4,15 @@ import android.net.Uri
 import android.provider.ContactsContract
 import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
-import com.qmobile.qmobiledatasync.utils.BaseInputControl
-import com.qmobile.qmobiledatasync.utils.InputControl
+import com.qmobile.qmobiledatasync.utils.BaseKotlinInputControl
+import com.qmobile.qmobiledatasync.utils.KotlinInputControl
 import com.qmobile.qmobileui.activity.mainactivity.ActivityResultController
 import com.qmobile.qmobileui.activity.mainactivity.MainActivity
 import com.qmobile.qmobileui.ui.SnackbarHelper
 import com.qmobile.qmobileui.utils.PermissionChecker
 
-@InputControl
-class EmailContact(private val view: View) : BaseInputControl {
+@KotlinInputControl
+class EmailContact(private val view: View) : BaseKotlinInputControl {
 
     override val autocomplete: Boolean = false
 
