@@ -24,7 +24,7 @@ class EmailContact(private val view: View) : BaseKotlinInputControl {
 
     private val contactEmailCallback: (contactUri: Uri?) -> Unit = { contactUri ->
         contactUri?.let {
-            (view.context as MainActivity?)?.apply {
+            (view.context as? MainActivity)?.apply {
                 contentResolver.query(contactUri, null, null, null, null)?.let { cursor ->
                     if (cursor.moveToFirst()) {
                         val contactIdIndex = cursor.getColumnIndex(ContactsContract.Contacts._ID)
@@ -56,13 +56,13 @@ class EmailContact(private val view: View) : BaseKotlinInputControl {
     }
 
     override fun process(inputValue: Any?, outputCallback: (output: Any) -> Unit) {
-        (view.context as PermissionChecker?)?.askPermission(
+        (view.context as? PermissionChecker)?.askPermission(
             permission = android.Manifest.permission.READ_CONTACTS,
             rationale = "Permission required to read contacts"
         ) { isGranted ->
             if (isGranted) {
                 this.outputCallback = outputCallback
-                (view.context as ActivityResultController?)?.launch(
+                (view.context as? ActivityResultController)?.launch(
                     type = ActivityResultContracts.PickContact(),
                     input = null,
                     callback = contactEmailCallback
